@@ -159,8 +159,7 @@ h2 {
   margin-right: 50px;
   font-family: Arial, sans-serif;
 }
-
-.item-cuidados {
+.section-cuidados .item-cuidados {
   margin-bottom: 5px;
   margin-top: 5px;
 }
@@ -179,7 +178,7 @@ textarea {
 }
 
 .responsive-img {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
   display: block;
 }

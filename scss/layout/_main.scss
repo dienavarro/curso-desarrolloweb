@@ -85,11 +85,12 @@ h2 {
     margin-left: 50px;
     margin-right: 50px;
     font-family: Arial, sans-serif;
+    .item-cuidados{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
 }
-.item-cuidados{
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
+
 
 /*Codigo de la pagina informacion*/
 .div-info, .section-info {
@@ -103,7 +104,7 @@ textarea{
     text-align: left;
 }
 .responsive-img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     display: block;
 }
