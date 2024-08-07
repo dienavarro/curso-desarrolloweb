@@ -1,0 +1,14 @@
+{
+  "name": "pre-entregable1-diego-navarro-tuero",
+  "version": "1.0.0",
+  "description": "Curso de desarrollo web CoderHouse // 2do pre-entregable.",
+  "main": "index.js",
+  "scripts": {
+    "test": "version"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.8"
+  }
+}

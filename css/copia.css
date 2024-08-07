@@ -1,0 +1,270 @@
+/*Respaldo para la instalación de SASS*/
+/*1°_reset-base// nombre del archivo en scss*/
+/*Reset de cualquier formato*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Diseño general*/
+body {
+    margin-top: 0;
+    font-family: Arial, sans-serif;
+}
+/*2°_header// nombre del archivo en scss*/
+/*Banda continua de publicidad o datos que pida el cliente*/
+.con-principal {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.con-secundario {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 35s linear infinite;
+}
+.con-secundario span {
+    display: inline-block;
+    margin-right: 50px; /* Espacio entre los mensajes */
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/*logo*/
+header .principal-logo {
+    background-color: #D5EFC8;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Menu de navegación diseño*/
+
+.nav-item a {
+    display: block;
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.nav-item a:hover {
+    background-color: #b0b6ad;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-left: 0;
+    }
+}
+@media (min-width: 991px) {
+    .navbar-nav {
+        margin: 0 auto;
+    }
+}
+/*3°_main// nombre del archivo en scss*/
+/*Carousel*/
+.carousel-inner {
+    background-color: lightgrey;
+}
+
+/*Linea que divide el banner de lo mas vendido*/
+.linea {
+    height: 5px; /* Grosor de la línea */
+    margin: 10px 0px 40px 0px; /* Espacio alrededor de la línea */
+    background-color: black;
+    opacity: 1 !important;
+}
+/*Boton de comprar*/
+.buy-button{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D5EFC8;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight:550;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+}
+.buy-button:hover {
+    background-color: #a8e0c0; 
+}
+.buy-button:active {
+    background-color: #a4a4a5;
+}
+.col p{
+    margin-bottom: 3px !important;
+}
+
+/*Lo mas vendido*/
+.img-lomasvendido {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 15px;
+}
+.img-lomasvendido img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+/*Linea que divide lo mas vendido de novedades*/
+.linea1 {
+    height: 5px; /* Grosor de la línea */
+    margin: 40px 0px; /* Espacio alrededor de la línea */
+    background-color: black;
+    opacity: 1 !important;
+}
+/*Novedades*/
+.img-novedades {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 15px;
+}
+.img-novedades img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+h2 {
+    text-align: center;
+    color:grey;
+}
+/*4°_footer// nombre del archivo en scss*/
+/*Footer*/
+footer{
+    background-color: #D5EFC8 !important;
+    color: #000;
+    padding-top: 20px !important;
+    height: auto;
+    width: auto;
+    display: flex;
+    margin-top: 20px;
+}
+.list-footer {
+    list-style-type: none;
+    padding-inline-start: 0px !important;
+}
+.list-footer a{
+    text-decoration: none;
+    color: #000;
+}
+.info-f {
+    list-style-type: none;
+    padding-inline-start: 0px !important;
+}
+.info-f a{
+    text-decoration: none;
+    color:#000
+}
+.redes-img {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+.redes-img li {
+    display: inline; 
+}
+.redes-img img {
+    display: block; 
+    margin: 5px !important;
+}
+h3{
+    padding-top: 2px;
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 16px;
+}
+.whatsapp-float {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+}
+.whatsapp-float:hover {
+    transform: scale(1.6);
+}
+.whatsapp-float img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/*Productos diseño*/
+.col img{
+   margin: 10px; 
+   border-radius: 10px;
+}
+.col p{
+    max-width: 180px;
+    margin-inline-start: unset;
+    margin-inline-start: auto !important;/*use este comando y el de abajo con justify-content: center no funcionaba*/
+    margin-inline-end: auto !important;
+}
+/*Compras diseño*/
+.section-compras {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Arial, sans-serif;
+}
+.ol-itemcom, .ul-itemcom, .p-compras, .p-compras1 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.p-compras {
+    line-height: 1.5;
+    text-align: center;
+}
+.p-compras1 {
+    text-align: left;
+}
+
+/*Cuidados diseño*/
+.section-cuidados {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Arial, sans-serif;
+}
+.item-cuidados{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/*Info diseño*/
+.div-info, .section-info {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Arial, sans-serif;
+    line-height: 2;
+}
+textarea{
+    margin: 10px 10px 10px 10px;
+    text-align: left;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

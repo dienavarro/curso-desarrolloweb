@@ -1,268 +1,253 @@
+@charset "UTF-8";
 /*Reset de cualquier formato*/
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*Diseño general*/
 body {
-    margin-top: 0;
-    font-family: Arial, sans-serif;
+  margin-top: 0;
+  font-family: Arial, sans-serif;
 }
 
-/*Banda continua de publicidad o datos que pida el cliente*/
-.con-principal {
-    overflow: hidden;
-    white-space: nowrap;
-    background-color: #f8f8f8;
-    padding: 10px 0;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    position: relative;
+header .con-principal {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: relative;
 }
-.con-secundario {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 35s linear infinite;
+header .con-principal .con-secundario {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 35s linear infinite;
 }
-.con-secundario span {
-    display: inline-block;
-    margin-right: 50px; /* Espacio entre los mensajes */
+header .con-principal .con-secundario span {
+  display: inline-block;
+  margin-right: 50px; /* Espacio entre los mensajes */
 }
 @keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
-
-/*logo*/
 header .principal-logo {
-    background-color: #D5EFC8;
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    height: auto;
+  background-color: #D5EFC8;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
 }
-
-/*Menu de navegación diseño*/
-
-.nav-item a {
-    display: block;
-    color: black;
-    padding: 5px 5px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 10px;
+header .nav-item a {
+  display: block;
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
 }
-.nav-item a:hover {
-    background-color: #b0b6ad;
+header .nav-item a:hover {
+  background-color: #b0b6ad;
 }
-
 @media (max-width: 992px) {
-    .navbar-nav {
-        margin-left: 0;
-    }
+  header .navbar-nav {
+    margin-left: 0;
+  }
 }
 @media (min-width: 991px) {
-    .navbar-nav {
-        margin: 0 auto;
-    }
+  header .navbar-nav {
+    margin: 0 auto;
+  }
 }
 
-/*Carousel*/
+/*Codigo de la pagina Index con algo de la pagina productos*/
 .carousel-inner {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
 
-/*Linea que divide el banner de lo mas vendido*/
 .linea {
-    height: 5px; /* Grosor de la línea */
-    margin: 10px 0px 40px 0px; /* Espacio alrededor de la línea */
-    background-color: black;
-    opacity: 1 !important;
-}
-/*Boton de comprar*/
-.buy-button{
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #D5EFC8;
-    border-radius: 10px;
-    padding: 5px;
-    font-weight:550;
-    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid black;
-}
-.buy-button:hover {
-    background-color: #a8e0c0; 
-}
-.buy-button:active {
-    background-color: #a4a4a5;
-}
-.col p{
-    margin-bottom: 3px !important;
+  height: 5px; /* Grosor de la línea */
+  margin: 10px 0px 40px 0px; /* Espacio alrededor de la línea */
+  background-color: black;
+  opacity: 1 !important;
 }
 
-/*Lo mas vendido*/
-.img-lomasvendido {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin-top: 15px;
-}
-.img-lomasvendido img {
-    max-width: 100%;
-    margin-top: 20px;
-}
-
-/*Linea que divide lo mas vendido de novedades*/
-.linea1 {
-    height: 5px; /* Grosor de la línea */
-    margin: 40px 0px; /* Espacio alrededor de la línea */
-    background-color: black;
-    opacity: 1 !important;
-}
-/*Novedades*/
-.img-novedades {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin-top: 15px;
-}
-.img-novedades img {
-    max-width: 100%;
-    margin-top: 20px;
-}
+/*Seccion de lo mas vendido y Novedades // evito repetir codigo ya que ambas tienen el mismo formato*/
 h2 {
-    text-align: center;
-    color:grey;
+  text-align: center;
+  color: grey;
 }
 
-/*Footer*/
-footer{
-    background-color: #D5EFC8 !important;
-    color: #000;
-    padding-top: 20px !important;
-    height: auto;
-    width: auto;
-    display: flex;
-    margin-top: 20px;
+.col .img-lomasvendido, .col .img-novedades {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 15px;
 }
-.list-footer {
-    list-style-type: none;
-    padding-inline-start: 0px !important;
+.col .img-lomasvendido img, .col .img-novedades img {
+  max-width: 100%;
+  margin-top: 20px;
 }
-.list-footer a{
-    text-decoration: none;
-    color: #000;
+.col img { /*Pag productos*/
+  margin: 10px;
+  border-radius: 10px;
 }
-.info-f {
-    list-style-type: none;
-    padding-inline-start: 0px !important;
+.col p {
+  margin-bottom: 3px !important;
+  max-width: 180px; /*Pag productos*/
+  margin-inline-start: unset; /*Pag productos*/
+  margin-inline-start: auto !important; /*Pag productos*/
+  margin-inline-end: auto !important; /*Pag productos*/
 }
-.info-f a{
-    text-decoration: none;
-    color:#000
+.col .buy-button { /*Boton de comprar*/
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #D5EFC8;
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: lighter;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
 }
-.redes-img {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
+.col .buy-button:hover {
+  background-color: #a8e0c0;
 }
-.redes-img li {
-    display: inline; 
-}
-.redes-img img {
-    display: block; 
-    margin: 5px !important;
-}
-h3{
-    padding-top: 2px;
-    margin-bottom: 0px;
-    color: #000;
-    font-size: 16px;
-}
-.whatsapp-float {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    bottom: 40px;
-    right: 30px;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s;
-}
-.whatsapp-float:hover {
-    transform: scale(1.6);
-}
-.whatsapp-float img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+.col .buy-button:active {
+  background-color: #a4a4a5;
 }
 
-/*Productos diseño*/
-.col img{
-   margin: 10px; 
-   border-radius: 10px;
+.linea1 { /*Linea que divide lo mas vendido de novedades*/
+  height: 5px; /* Grosor de la línea */
+  margin: 40px 0px; /* Espacio alrededor de la línea */
+  background-color: black;
+  opacity: 1 !important;
 }
-.col p{
-    max-width: 180px;
-    margin-inline-start: unset;
-    margin-inline-start: auto !important;/*use este comando y el de abajo con justify-content: center no funcionaba*/
-    margin-inline-end: auto !important;
-}
-/*Compras diseño*/
+
+/*Codigo de la pagina como comprar*/
 .section-compras {
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: Arial, sans-serif;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: Arial, sans-serif;
 }
+
 .ol-itemcom, .ul-itemcom, .p-compras, .p-compras1 {
-    margin-bottom: 5px;
-    margin-top: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
+
 .p-compras {
-    line-height: 1.5;
-    text-align: center;
+  line-height: 1.5;
+  text-align: center;
 }
+
 .p-compras1 {
-    text-align: left;
+  text-align: left;
 }
 
-/*Cuidados diseño*/
+/*Codigo de la pagina cuidados*/
 .section-cuidados {
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: Arial, sans-serif;
-}
-.item-cuidados{
-    margin-bottom: 5px;
-    margin-top: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: Arial, sans-serif;
 }
 
-/*Info diseño*/
-.div-info, .section-info {
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: Arial, sans-serif;
-    line-height: 2;
+.item-cuidados {
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
-textarea{
-    margin: 10px 10px 10px 10px;
-    text-align: left;
+
+/*Codigo de la pagina informacion*/
+.div-info, .section-info {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: Arial, sans-serif;
+  line-height: 2;
+}
+
+textarea {
+  margin: 10px 10px 10px 10px;
+  text-align: left;
 }
 
 .responsive-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
+
+/*Footer*/
+footer {
+  background-color: #D5EFC8 !important;
+  color: #000;
+  padding-top: 20px !important;
+  height: auto;
+  width: auto;
+  display: flex;
+  margin-top: 20px;
+}
+footer .list-footer {
+  list-style-type: none;
+  padding-inline-start: 0px !important;
+}
+footer .list-footer a {
+  text-decoration: none;
+  color: #000;
+}
+footer .info-f {
+  list-style-type: none;
+  padding-inline-start: 0px !important;
+}
+footer .info-f a {
+  text-decoration: none;
+  color: #000;
+}
+footer .redes-img {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+footer .redes-img li {
+  display: inline;
+}
+footer .redes-img li img {
+  display: block;
+  margin: 5px !important;
+}
+footer h3 {
+  padding-top: 2px;
+  margin-bottom: 0px;
+  color: #000;
+  font-size: 16px;
+}
+footer .whatsapp-float {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 40px;
+  right: 30px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+}
+footer .whatsapp-float:hover {
+  transform: scale(1.6);
+}
+footer .whatsapp-float img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,109 @@
+/*Codigo de la pagina Index con algo de la pagina productos*/
+.carousel-inner {
+    background-color: lightgrey;
+}
+.linea {
+    height: 5px; /* Grosor de la línea */
+    margin: 10px 0px 40px 0px; /* Espacio alrededor de la línea */
+    background-color: black;
+    opacity: 1 !important;
+}
+/*Seccion de lo mas vendido y Novedades // evito repetir codigo ya que ambas tienen el mismo formato*/
+h2 {
+    text-align: center;
+    color:grey;
+}
+.col {
+    .img-lomasvendido, .img-novedades {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 15px;
+        img {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    }
+    img{/*Pag productos*/
+        margin: 10px; 
+        border-radius: 10px;
+    }
+    p{
+        margin-bottom: 3px !important;
+        max-width: 180px;/*Pag productos*/
+        margin-inline-start: unset;/*Pag productos*/
+        margin-inline-start: auto !important;/*Pag productos*/
+        margin-inline-end: auto !important;/*Pag productos*/
+    }
+    .buy-button{/*Boton de comprar*/
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #D5EFC8;
+        color: black;
+        border-radius: 10px;
+        padding: 5px;
+        font-weight: lighter;
+        box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+        &:hover{
+            background-color: #a8e0c0; 
+        }
+        &:active{
+            background-color: #a4a4a5;
+        }
+    }
+}
+.linea1 {/*Linea que divide lo mas vendido de novedades*/
+    height: 5px; /* Grosor de la línea */
+    margin: 40px 0px; /* Espacio alrededor de la línea */
+    background-color: black;
+    opacity: 1 !important;
+}
+
+/*Codigo de la pagina como comprar*/
+.section-compras {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Arial, sans-serif;
+}
+.ol-itemcom, .ul-itemcom, .p-compras, .p-compras1 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.p-compras {
+    line-height: 1.5;
+    text-align: center;
+}
+.p-compras1 {
+    text-align: left;
+}
+
+/*Codigo de la pagina cuidados*/
+.section-cuidados {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Arial, sans-serif;
+}
+.item-cuidados{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/*Codigo de la pagina informacion*/
+.div-info, .section-info {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Arial, sans-serif;
+    line-height: 2;
+}
+textarea{
+    margin: 10px 10px 10px 10px;
+    text-align: left;
+}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,0 +1,65 @@
+/*Footer*/
+footer{
+    background-color: #D5EFC8 !important;
+    color: #000;
+    padding-top: 20px !important;
+    height: auto;
+    width: auto;
+    display: flex;
+    margin-top: 20px;
+    .list-footer {
+        list-style-type: none;
+        padding-inline-start: 0px !important;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+    } 
+    .info-f {
+        list-style-type: none;
+        padding-inline-start: 0px !important;
+        a{
+            text-decoration: none;
+            color:#000
+        }
+    }
+    .redes-img {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+        li {
+            display: inline;
+            img {
+                display: block; 
+                margin: 5px !important;
+            } 
+        }
+    }
+    h3{
+        padding-top: 2px;
+        margin-bottom: 0px;
+        color: #000;
+        font-size: 16px;
+    }
+    .whatsapp-float {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 40px;
+        right: 30px;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s;
+        &:hover{
+            transform: scale(1.6);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    }
+}
