@@ -71,9 +71,9 @@ header .nav-item a:hover {
   background-color: lightgrey;
 }
 
-.linea {
+.linea1 { /*Linea que divide lo mas vendido de novedades*/
   height: 5px; /* Grosor de la línea */
-  margin: 10px 0px 40px 0px; /* Espacio alrededor de la línea */
+  margin: 20px 0px; /* Espacio alrededor de la línea */
   background-color: black;
   opacity: 1 !important;
 }
@@ -84,28 +84,14 @@ h2 {
   color: grey;
 }
 
-.col .img-lomasvendido, .col .img-novedades {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin-top: 15px;
-}
-.col .img-lomasvendido img, .col .img-novedades img {
-  max-width: 100%;
-  margin-top: 20px;
-}
-.col img { /*Pag productos*/
+.col-6 img { /*Pag productos*/
   margin: 10px;
   border-radius: 10px;
 }
-.col p {
-  margin-bottom: 3px !important;
-  max-width: 180px; /*Pag productos*/
-  margin-inline-start: unset; /*Pag productos*/
-  margin-inline-start: auto !important; /*Pag productos*/
-  margin-inline-end: auto !important; /*Pag productos*/
+.col-6 p {
+  margin: 0px;
 }
-.col .buy-button { /*Boton de comprar*/
+.col-6 .buy-button { /*Boton de comprar*/
   list-style-type: none;
   text-decoration: none;
   font-size: 16px;
@@ -116,20 +102,20 @@ h2 {
   padding: 5px;
   font-weight: lighter;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid black;
 }
-.col .buy-button:hover {
+.col-6 .buy-button:hover {
   background-color: #a8e0c0;
 }
-.col .buy-button:active {
+.col-6 .buy-button:active {
   background-color: #a4a4a5;
 }
 
-.linea1 { /*Linea que divide lo mas vendido de novedades*/
-  height: 5px; /* Grosor de la línea */
-  margin: 40px 0px; /* Espacio alrededor de la línea */
-  background-color: black;
-  opacity: 1 !important;
+.filtros {
+  list-style-type: none;
+}
+.filtros a {
+  text-decoration: none;
+  color: black;
 }
 
 /*Codigo de la pagina como comprar*/
@@ -138,19 +124,17 @@ h2 {
   margin-right: 50px;
   font-family: Arial, sans-serif;
 }
-
-.ol-itemcom, .ul-itemcom, .p-compras, .p-compras1 {
-  margin-bottom: 5px;
-  margin-top: 5px;
+.section-compras .p-compras1 {
+  text-align: left;
 }
-
-.p-compras {
+.section-compras .p-compras {
   line-height: 1.5;
   text-align: center;
 }
 
-.p-compras1 {
-  text-align: left;
+.ol-itemcom, .ul-itemcom, .p-compras, .p-compras1 {
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 /*Codigo de la pagina cuidados*/
@@ -173,7 +157,7 @@ h2 {
 }
 
 textarea {
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
   text-align: left;
 }
 

@@ -50,61 +50,185 @@
         </nav>
     </header>
     <section>
-        <!--Grid-->
-        <div class="container text-center">
-            <div class="row">
+      <!--Grid-->
+      <div class="container">
+          <div class="row">
+              <!-- Columna de filtros -->
+              <div class="col-md-3">
+                <div class="filter-group">
+                  <h3>Filtros</h3>
+                  <br>
+                  <h4>Tamaño de Aros</h4>
+                  <div>
+                      <input type="radio" id="small" name="size" value="small">
+                      <label for="small">Aros chicos</label>
+                  </div>
+                  <div>
+                      <input type="radio" id="medium" name="size" value="medium">
+                      <label for="medium">Aros medianos</label>
+                  </div>
+                  <div>
+                      <input type="radio" id="large" name="size" value="large">
+                      <label for="large">Aros grandes</label>
+                  </div>
+                  <br>
+                  <h4>Rango de Precios</h4>
+                  <div>
+                      <input type="checkbox" id="price1" name="price" value="price1">
+                      <label for="price1">Menos de $10.000</label>
+                  </div>
+                  <div>
+                      <input type="checkbox" id="price2" name="price" value="price2">
+                      <label for="price2">$10.000 - $20.000</label>
+                  </div>
+                  <div>
+                      <input type="checkbox" id="price3" name="price" value="price3">
+                      <label for="price3">Más de $20.000</label>
+                  </div>
+                  <br>
+                  <a href="#">Aplicar Filtros</a>
+              </div>
               
-              <div class="col">
-                <img src="../img/4.jpg" alt="imagen 1" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/5.jpg" alt="imagen 2" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/6.jpg" alt="imagen 3" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/7.jpg" alt="imagen 4" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/8.jpg" alt="imagen 5" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/9.jpg" alt="imagen 6" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/4.jpg" alt="imagen 7" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
-              <div class="col">
-                <img src="../img/4.jpg" alt="imagen 1" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/5.jpg" alt="imagen 2" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/6.jpg" alt="imagen 3" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/7.jpg" alt="imagen 4" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/8.jpg" alt="imagen 5" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/9.jpg" alt="imagen 6" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/4.jpg" alt="imagen 7" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              
+              <!-- Columna de contenido principal -->
+              <div class="col-md-9">
+                  <div class="row text-center">
+                      <div class="col-6 col-md-3 especial">
+                          <img src="../img/4.jpg" alt="Prod.1 mas vendido" width="80%" height="auto">
+                          <p>Candy</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/5.jpg" alt="Prod.2 mas vendido" width="80%" height="auto">
+                          <p>Flowers</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/6.jpg" alt="Prod.3 mas vendido" width="80%" height="auto">
+                          <p>Cristals</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/7.jpg" alt="Prod.4 mas vendido" width="80%" height="auto">
+                          <p>Flowers</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                  </div>
+                  <div class="row text-center">
+                      <div class="col-6 col-md-3 especial">
+                          <img src="../img/1.jpg" alt="Prod.1 mas vendido" width="80%" height="auto">
+                          <p>Candy</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/2.jpg" alt="Prod.2 mas vendido" width="80%" height="auto">
+                          <p>Flowers</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/3.jpg" alt="Prod.3 mas vendido" width="80%" height="auto">
+                          <p>Cristals</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/8.jpg" alt="Prod.4 mas vendido" width="80%" height="auto">
+                          <p>Flowers</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                  </div>
+                  <div class="row text-center">
+                      <div class="col-6 col-md-3 especial">
+                          <img src="../img/4.jpg" alt="Prod.1 mas vendido" width="80%" height="auto">
+                          <p>Candy</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/5.jpg" alt="Prod.2 mas vendido" width="80%" height="auto">
+                          <p>Flowers</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/6.jpg" alt="Prod.3 mas vendido" width="80%" height="auto">
+                          <p>Cristals</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/7.jpg" alt="Prod.4 mas vendido" width="80%" height="auto">
+                          <p>Flowers</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                  </div>
+                  <div class="row text-center">
+                      <div class="col-6 col-md-3 especial">
+                          <img src="../img/1.jpg" alt="Prod.1 mas vendido" width="80%" height="auto">
+                          <p>Candy</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/2.jpg" alt="Prod.2 mas vendido" width="80%" height="auto">
+                          <p>Flowers</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/3.jpg" alt="Prod.3 mas vendido" width="80%" height="auto">
+                          <p>Cristals</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <img src="../img/9.jpg" alt="Prod.4 mas vendido" width="80%" height="auto">
+                          <p>Flowers</p>
+                          <h6><strong>$15.000</strong></h6>
+                          <a href="#" class="buy-button">Comprar</a>
+                      </div>
+                  </div>
+                  <div class="row text-center">
+                    <div class="col-6 col-md-3 especial">
+                        <img src="../img/4.jpg" alt="Prod.1 mas vendido" width="80%" height="auto">
+                        <p>Candy</p>
+                        <h6><strong>$15.000</strong></h6>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="../img/5.jpg" alt="Prod.2 mas vendido" width="80%" height="auto">
+                        <p>Flowers</p>
+                        <h6><strong>$15.000</strong></h6>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="../img/6.jpg" alt="Prod.3 mas vendido" width="80%" height="auto">
+                        <p>Cristals</p>
+                        <h6><strong>$15.000</strong></h6>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="../img/7.jpg" alt="Prod.4 mas vendido" width="80%" height="auto">
+                        <p>Flowers</p>
+                        <h6><strong>$15.000</strong></h6>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                </div>
               </div>
-              <div class="col">
-                <img src="../img/4.jpg" alt="imagen 1" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/5.jpg" alt="imagen 2" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/6.jpg" alt="imagen 3" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/7.jpg" alt="imagen 4" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/8.jpg" alt="imagen 5" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/9.jpg" alt="imagen 6" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/4.jpg" alt="imagen 7" width="200" height="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
           </div>
-    </section>    
+      </div>
+  </section>
+  
+  
     <footer><!--Pie de pagina-->
       <a href="https://wa.me/+5493515294161" target="_blank" class="whatsapp-float"><img src="../img/ic-whatsapp.gif" alt="chat de whatsapp"></a>
       <div class="container ">
