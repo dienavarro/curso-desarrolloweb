@@ -1,30 +1,28 @@
-$color-linea:black;
-@mixin text-style{
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: Arial, sans-serif;
-}
-@mixin margen{
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
 /*Codigo de la pagina Index con algo de la pagina productos*/
 .carousel-inner {
     background-color: lightgrey;
 }
 .linea1 {/*Linea que divide lo mas vendido de novedades*/
-    height: 5px; /* Grosor de la línea */
-    margin: 20px 0px; /* Espacio alrededor de la línea */
+    height: 5px; 
+    margin: 20px 0px;
     background-color: $color-linea;
     opacity: 1 !important;
 }
-/*Seccion de lo mas vendido y Novedades // evito repetir codigo ya que ambas tienen el mismo formato*/
+/*Seccion de lo mas vendido y Novedades */
 h2 {
     text-align: center;
     color:grey;
+    font-weight: bold; 
+
+}
+.filtros{
+    list-style-type: none;
+    a{
+        text-decoration: none;
+    }
 }
 .col-6 {
-    img{/*Pag productos*/
+    img{
         margin: 10px; 
         border-radius: 10px;
     }
@@ -50,27 +48,24 @@ h2 {
         }
     }
 }
-.filtros{
-    list-style-type: none;
-    a{
-        text-decoration: none;
-        color:black
-    }
-}
+
 /*Codigo de la pagina como comprar*/
 .section-compras {
     @include text-style;
     .p-compras1 {
         text-align: left;
+        @include margen;
+        .ol-itemcom, .ul-itemcom{
+            @include margen;
+        }
     }
     .p-compras {
         line-height: 1.5;
         text-align: center;
+        @include margen;
     }
 }
-.ol-itemcom, .ul-itemcom, .p-compras, .p-compras1 {
-    @include margen;
-}
+
 /*Codigo de la pagina cuidados*/
 .section-cuidados {
     @include text-style;
@@ -91,4 +86,44 @@ textarea{
     max-width: 60%;
     height: auto;
     display: block;
+}
+.card{
+    margin: 0 40px;
+    padding: 2em;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    color: white;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.card ::after, .card ::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff4545);
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 20px;
+    animation: 3s spin linear infinite;
+}
+.card ::before{
+    filter:blur(1.5rem);
+    opacity: 0.8;
+}
+@keyframes spin{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
 }

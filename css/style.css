@@ -72,19 +72,27 @@ header .nav-item a:hover {
 }
 
 .linea1 { /*Linea que divide lo mas vendido de novedades*/
-  height: 5px; /* Grosor de la línea */
-  margin: 20px 0px; /* Espacio alrededor de la línea */
+  height: 5px;
+  margin: 20px 0px;
   background-color: black;
   opacity: 1 !important;
 }
 
-/*Seccion de lo mas vendido y Novedades // evito repetir codigo ya que ambas tienen el mismo formato*/
+/*Seccion de lo mas vendido y Novedades */
 h2 {
   text-align: center;
   color: grey;
+  font-weight: bold;
 }
 
-.col-6 img { /*Pag productos*/
+.filtros {
+  list-style-type: none;
+}
+.filtros a {
+  text-decoration: none;
+}
+
+.col-6 img {
   margin: 10px;
   border-radius: 10px;
 }
@@ -110,14 +118,6 @@ h2 {
   background-color: #a4a4a5;
 }
 
-.filtros {
-  list-style-type: none;
-}
-.filtros a {
-  text-decoration: none;
-  color: black;
-}
-
 /*Codigo de la pagina como comprar*/
 .section-compras {
   margin-left: 50px;
@@ -126,13 +126,16 @@ h2 {
 }
 .section-compras .p-compras1 {
   text-align: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.section-compras .p-compras1 .ol-itemcom, .section-compras .p-compras1 .ul-itemcom {
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .section-compras .p-compras {
   line-height: 1.5;
   text-align: center;
-}
-
-.ol-itemcom, .ul-itemcom, .p-compras, .p-compras1 {
   margin-bottom: 5px;
   margin-top: 5px;
 }
@@ -167,6 +170,49 @@ textarea {
   display: block;
 }
 
+.card {
+  margin: 0 40px;
+  padding: 2em;
+  background: #1c1f2b;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  color: white;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.card ::after, .card ::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff4545);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 10px;
+  border-radius: 20px;
+  animation: 3s spin linear infinite;
+}
+
+.card ::before {
+  filter: blur(1.5rem);
+  opacity: 0.8;
+}
+
+@keyframes spin {
+  from {
+    --angle:0deg;
+  }
+  to {
+    --angle:360deg;
+  }
+}
 /*Footer*/
 footer {
   background-color: #D5EFC8 !important;
