@@ -1,1 +1,1 @@
-Curso de desarrollo web CoderHouse // 2do pre-entregable.
+Curso de desarrollo web CoderHouse
