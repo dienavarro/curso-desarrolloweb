@@ -31,6 +31,18 @@ header{
         justify-content: center;
         max-width: 100%;
         height: auto;
+        overflow: hidden;
+        .logo {
+            animation: slideIn 1s ease-out forwards;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-300%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
     }
     .nav-item a {
         display: block;

@@ -43,6 +43,18 @@ header .principal-logo {
   justify-content: center;
   max-width: 100%;
   height: auto;
+  overflow: hidden;
+}
+header .principal-logo .logo {
+  animation: slideIn 1s ease-out forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-300%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 header .nav-item a {
   display: block;
@@ -81,8 +93,10 @@ header .nav-item a:hover {
 /*Seccion de lo mas vendido y Novedades */
 h2 {
   text-align: center;
-  color: grey;
   font-weight: bold;
+  background: linear-gradient(to right, #0d0152, #f3bc91, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .filtros {
@@ -95,6 +109,10 @@ h2 {
 .col-6 img {
   margin: 10px;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.col-6 img:hover {
+  transform: scale(1.2);
 }
 .col-6 p {
   margin: 0px;
@@ -123,6 +141,9 @@ h2 {
   margin-left: 50px;
   margin-right: 50px;
   font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0a0236, #f3bc91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .section-compras .p-compras1 {
   text-align: left;
@@ -145,6 +166,9 @@ h2 {
   margin-left: 50px;
   margin-right: 50px;
   font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0a0236, #f3bc91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .section-cuidados .item-cuidados {
   margin-bottom: 5px;
@@ -179,12 +203,6 @@ textarea {
   position: relative;
   color: white;
 }
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
 .card ::after, .card ::before {
   content: "";
   position: absolute;
@@ -199,12 +217,16 @@ textarea {
   border-radius: 20px;
   animation: 3s spin linear infinite;
 }
-
 .card ::before {
   filter: blur(1.5rem);
   opacity: 0.8;
 }
 
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 @keyframes spin {
   from {
     --angle:0deg;

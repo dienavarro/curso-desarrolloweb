@@ -2,6 +2,9 @@
     margin-left: 50px;
     margin-right: 50px;
     font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0a0236, #f3bc91);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 @mixin margen{
     margin-bottom: 5px;
